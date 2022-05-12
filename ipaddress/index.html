@@ -256,6 +256,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#class-b" class="md-nav__link">
+    Class B
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-a" class="md-nav__link">
+    Class A
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -326,6 +340,20 @@
           <li class="md-nav__item">
   <a href="#class-c" class="md-nav__link">
     Class C
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-b" class="md-nav__link">
+    Class B
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-a" class="md-nav__link">
+    Class A
   </a>
   
 </li>
@@ -408,13 +436,32 @@
 <li>Any IP starting from 127 is loop back IP Address</li>
 </ul>
 <h3 id="class-c">Class C</h3>
-<p>Let us see start with example of Class C</p>
+<p>Let us start with example of Class C</p>
 <p><strong>IP Address:</strong> 192.168.100.225<br>
 <strong>Subnet Mask:</strong> 255.255.255.0<br>
 <strong>Gateway:</strong> 192. 168.100.1<br></p>
-<ul>
-<li>Please note the IP Address in above example, it's first octal is 192 which comes under Class C range. So this is Class C IP Address.</li>
-</ul>
+<p>Please note the IP Address in above example, its first octal is 192 which comes under Class C range. So this is Class C IP Address. This IP Address can be written as 192.168.100.225/24 in cidr notation because 24 bits are represented as network part.</p>
+<p><strong>Network ID(First):</strong> 192.168.100.0 </br>
+<strong>Broadcard ID(Last):</strong> 192.168.100.255</p>
+<p>The total number of host = 2^8-2 = 254. We are subtracting 2 because of Network ID and Broadcast ID are taken from host IP range. The valid IP Address range from 192.168.100.1 to 192.168.100.254</p>
+<h3 id="class-b">Class B</h3>
+<p>Let us see the example of Class C</p>
+<p><strong>IP Address:</strong> 172.123.100.225<br>
+<strong>Subnet Mask:</strong> 255.255.0.0<br>
+<strong>Gateway:</strong> 172.123.1.225<br></p>
+<p>Please note the IP Address in above example, its first octal is 172 which comes under Class B range. So this is Class B IP Address. This IP Address can be written as 172.123.100.225/16 in cidr notation because 16 bits are represented as network part.</p>
+<p><strong>Network ID(First):</strong> 172.123.0.0 </br>
+<strong>Broadcard ID(Last):</strong> 172.123.255.255</p>
+<p>The total number of host = 2^16-2 = 65534. We are subtracting 2 because of Network ID and Broadcast ID are taken from host IP range. The valid IP Address range from 172.123.0.1 to 172.123.255.254</p>
+<h3 id="class-a">Class A</h3>
+<p>Let us see the example of Class A</p>
+<p><strong>IP Address:</strong> 100.228.111.225<br>
+<strong>Subnet Mask:</strong> 255.0.0.0<br>
+<strong>Gateway:</strong> 100.101.123.1<br></p>
+<p>Please note the IP Address in above example, its first octal is 100 which comes under Class A range. So this is Class A IP Address. This IP Address can be written as 100.228.111.225/8 in cidr notation because 8 bits are represented as network part.</p>
+<p><strong>Network ID(First):</strong> 100.0.0.0 </br>
+<strong>Broadcard ID(Last):</strong> 100.255.255.255</p>
+<p>The total number of host = 2^24-2 = 2097150. We are subtracting 2 because of Network ID and Broadcast ID are taken from host IP range. The valid IP Address range from 100.0.0.1 to 172.255.255.254</p>
                 
               
               
