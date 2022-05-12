@@ -18,7 +18,7 @@ Let us see example of IP Address, Subnet Mask and Gateway
     - An Octet is group of 8 bits.
     - So IPv4 is 32 bits because 8 bits in each octel * 4 total octels in an IP address == 32 bits
     - 8 bits in each octet is displayed as decimal number. 
-- If we convert above IP address in binary form, it will look like this: 11000000.10101000.01100100.11100000
+- If we convert above IP address in binary form, it will look like this: 11000000.10101000.01100100.11100001
 - 
 
 
