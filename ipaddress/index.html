@@ -242,6 +242,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#subnet-mask_1" class="md-nav__link">
+    Subnet Mask
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gateway_1" class="md-nav__link">
+    Gateway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ipv4-classes" class="md-nav__link">
     IPv4 Classes
   </a>
@@ -329,6 +343,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#subnet-mask_1" class="md-nav__link">
+    Subnet Mask
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gateway_1" class="md-nav__link">
+    Gateway
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ipv4-classes" class="md-nav__link">
     IPv4 Classes
   </a>
@@ -393,11 +421,35 @@
 <li>8 bits in each octet is displayed as decimal number. </li>
 </ul>
 </li>
-<li>If we convert above IP address in binary form, it will look like this: 11000000.10101000.01100100.11100000</li>
-<li></li>
+<li>If we convert above IP address in binary form, it will look like this: 11000000.10101000.01100100.11100001</li>
+<li>IP Address can take 0 to 255 in each octet.<ul>
+<li>If all the bits in the octet are 0's then its decimal number is 0.</li>
+<li>If all the bits in the octel are 1's then its decimal number is 255.</li>
+<li>So value from 00000000 to 11111111 is range of octet.</li>
+<li>The number outside of this range is considered as invalid</li>
+</ul>
+</li>
 </ul>
 <h2 id="subnet-mask">Subnet Mask</h2>
+<ul>
+<li>Each IP Address has two information. It has network field and host field.</li>
+<li>We can indentity network field and host field by <em>Subnet Mask</em><ul>
+<li>The subnet mask will always be series of 1's and 0's</li>
+<li>Transition from 1's to 0's happens at place where separets network and host part.</li>
+<li>In above example, first 3 octets are from network part because first 3 octets are 255.255.255 where as last octet is host part because it has 0. So in above IP Address 192.169.100 is network part and 255 is host part.</li>
+<li>So from 192.169.100.0 to 192.169.100.255 are total number of hosts in above example. </li>
+</ul>
+</li>
+</ul>
 <h2 id="gateway">Gateway</h2>
+<ul>
+<li>Gateway is also called router</li>
+<li>Any packet going out of current network, it goes via gatway</li>
+<li>In above example, 192.168.100.1 is our gateway IP Address.</li>
+<li>Gateway IP needs to be in same network</li>
+</ul>
+<h2 id="subnet-mask_1">Subnet Mask</h2>
+<h2 id="gateway_1">Gateway</h2>
 <h2 id="ipv4-classes">IPv4 Classes</h2>
 <p>IPv4 classes are identified by the first octal</p>
 <p><strong><em>???</em></strong>.xxx.xxx.xxx</p>
