@@ -55,13 +55,51 @@ IPv4 classes are identified by the first octal
 
 ### Class C
 
-Let us see start with example of Class C
+Let us start with example of Class C
 
 **IP Address:** 192.168.100.225<br>
 **Subnet Mask:** 255.255.255.0<br>
 **Gateway:** 192. 168.100.1<br>
 
-- Please note the IP Address in above example, it's first octal is 192 which comes under Class C range. So this is Class C IP Address.
+Please note the IP Address in above example, its first octal is 192 which comes under Class C range. So this is Class C IP Address. This IP Address can be written as 192.168.100.225/24 in cidr notation because 24 bits are represented as network part.
+
+**Network ID(First):** 192.168.100.0 </br>
+**Broadcard ID(Last):** 192.168.100.255
 
 
+The total number of host = 2^8-2 = 254. We are subtracting 2 because of Network ID and Broadcast ID are taken from host IP range. The valid IP Address range from 192.168.100.1 to 192.168.100.254
+
+
+### Class B
+
+Let us see the example of Class C
+
+**IP Address:** 172.123.100.225<br>
+**Subnet Mask:** 255.255.0.0<br>
+**Gateway:** 172.123.1.225<br>
+
+Please note the IP Address in above example, its first octal is 172 which comes under Class B range. So this is Class B IP Address. This IP Address can be written as 172.123.100.225/16 in cidr notation because 16 bits are represented as network part.
+
+**Network ID(First):** 172.123.0.0 </br>
+**Broadcard ID(Last):** 172.123.255.255
+
+
+The total number of host = 2^16-2 = 65534. We are subtracting 2 because of Network ID and Broadcast ID are taken from host IP range. The valid IP Address range from 172.123.0.1 to 172.123.255.254
+
+
+### Class A
+
+Let us see the example of Class A
+
+**IP Address:** 100.228.111.225<br>
+**Subnet Mask:** 255.0.0.0<br>
+**Gateway:** 100.101.123.1<br>
+
+Please note the IP Address in above example, its first octal is 100 which comes under Class A range. So this is Class A IP Address. This IP Address can be written as 100.228.111.225/8 in cidr notation because 8 bits are represented as network part.
+
+**Network ID(First):** 100.0.0.0 </br>
+**Broadcard ID(Last):** 100.255.255.255
+
+
+The total number of host = 2^24-2 = 2097150. We are subtracting 2 because of Network ID and Broadcast ID are taken from host IP range. The valid IP Address range from 100.0.0.1 to 172.255.255.254
 
